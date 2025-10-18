@@ -13,9 +13,6 @@
  - CI/CD: GitHub Actions tests, builds, and pushes images to Docker Hub
  - Local run: Pull published images or build locally via Compose
 
-## File Structure
-![File Structure](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/File-structure.png)
-
 ## Prerequisites
  - Git
  - GitHub account
@@ -124,6 +121,10 @@ minikube service notes-web --url
    - Edit docker-compose.yml (e.g., 8080:80 and 5001:5000).
  - CORS/API URL
    - Web container expects VITE_API_URL. In compose we set http://localhost:5000.
+  
+ ---
+
+ "THE END!" ☺️
 
 
 
