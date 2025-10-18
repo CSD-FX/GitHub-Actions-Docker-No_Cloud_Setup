@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  api:
+    build: ./api
+    image: ${API_IMAGE:-notes-api:local}
+    ports:
+      - "5000:5000"
+    volumes:
+      - notes_data:/data
+
+  web:
+    build: ./web
+    image: ${WEB_IMAGE:-notes-web:local}
+    ports:
+      - "5173:80"
+    environment:
+      - VITE_API_URL=http://localhost:5000
+    depends_on:
+      - api
+volumes:
+  notes_data:

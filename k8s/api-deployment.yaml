@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: notes-api }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: notes-api } }
+  template:
+    metadata: { labels: { app: notes-api } }
+    spec:
+      containers:
+        - name: api
+          image: docker.io/<username>/notes-api:latest
+          ports: [{ containerPort: 5000 }]
+          volumeMounts: [{ name: data, mountPath: /data }]
+      volumes: [{ name: data, emptyDir: {} }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: notes-api }
+spec:
+  selector: { app: notes-api }
+  ports: [{ port: 5000, targetPort: 5000 }]
