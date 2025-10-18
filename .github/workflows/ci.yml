@@ -23,7 +23,10 @@ jobs:
         working-directory: api
         env:
           PYTHONPATH: ${{ github.workspace }}/api
-        run: pytest -q
+          DB_PATH: ${{ github.workspace }}/api/test-data/notes.db
+        run: |
+          mkdir -p test-data
+          pytest -q 
 
   build-and-push:
     needs: test-api
