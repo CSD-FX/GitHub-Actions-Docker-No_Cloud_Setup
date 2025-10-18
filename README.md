@@ -24,12 +24,16 @@
 
 # Step by Step Guild 👇
 
-## Clone the Repo in your local
+## > Clone the Repo in your local
 ```bash
 git clone
 cd
 ```
-## Docker Hub setup
+## > Docker Hub setup
  - Create two public repos: notes-api and notes-web.
  -  Create a Docker Hub Access Token:
      - Docker Hub → Account Settings → Security → New Access Token
+## > Create a GitHub Repo and Add GitHub secrets
+ - Repo → Settings → Secrets and variables → Actions → New repository secret:
+`bash DOCKERHUB_USERNAME = your Docker Hub username
+      DOCKERHUB_TOKEN = the access token`
