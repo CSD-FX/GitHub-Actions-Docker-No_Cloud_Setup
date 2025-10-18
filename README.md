@@ -40,7 +40,7 @@ cd
      - DOCKERHUB_USERNAME = your Docker Hub username
      - DOCKERHUB_TOKEN = the access token
   
-## > push to main (triggers CI)
+## > push to Your New Repo MAIN Brainch (triggers CI)
 ```bash
 # optional tweak, e.g., edit web/src/App.jsx title
 git add .
@@ -90,6 +90,31 @@ docker compose up --build -d
     ```bash
       http://localhost:5000/health
     ```
+---
+
+## > Optional: Minikube (K8S)
+ - Start Minikube and apply manifests:
+```bash
+minikube start
+kubectl apply -f k8s/
+minikube service notes-web --url
+```
+  - Open the printed URL. The web deployment uses VITE_API_URL=http://notes-api:5000 to call the API service.
+
+---
+
+# Troubleshooting
+ - Docker not running
+   - Start Docker Desktop; docker info should show a Server section.
+ - Base image pulls fail (DNS/VPN)
+   - Set Desktop DNS to 1.1.1.1 and 8.8.8.8, apply & restart; disable VPN or configure proxy.
+ - Tests fail in CI
+   - api/tests/test_notes.py uses from app import app.
+   - CI sets PYTHONPATH=${{ github.workspace }}/api and DB_PATH to a writable path.
+ - Ports in use
+   - Edit docker-compose.yml (e.g., 8080:80 and 5001:5000).
+ - CORS/API URL
+   - Web container expects VITE_API_URL. In compose we set http://localhost:5000.
 
 
 
