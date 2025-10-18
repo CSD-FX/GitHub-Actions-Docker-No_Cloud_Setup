@@ -2,7 +2,7 @@
  A prettier Notes app: React + Vite + Tailwind frontend and Flask + SQLite backend. GitHub Actions runs tests, builds Docker images, and pushes to Docker Hub. Deploy locally with Docker or Docker Compose.
 
 ## Application Results 
-![CI/CD Workflow](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/GitHub_CICD.png)
+![CI/CD Workflow](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/CI-CD.png)
 ![Contact / Info](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/Cont_Info.png)
 ![Main Application UI](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/Main_Application.png)
 ![API Health Check](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/App_Health-Check.png)
