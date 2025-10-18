@@ -1,4 +1,4 @@
-from api.app import app
+from app import app
 
 def test_health():
     c = app.test_client()
