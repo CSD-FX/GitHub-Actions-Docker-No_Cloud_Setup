@@ -7,6 +7,8 @@
  - CI/CD: GitHub Actions tests, builds, and pushes images to Docker Hub
  - Local run: Pull published images or build locally via Compose
 
+images/File-structure.png
+
 ## Prerequisites
  - Git
  - GitHub account
