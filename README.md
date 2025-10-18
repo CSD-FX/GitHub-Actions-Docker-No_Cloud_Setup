@@ -1,13 +1,20 @@
 # Notes App with GitHub Actions + Docker (No Cloud)
  A prettier Notes app: React + Vite + Tailwind frontend and Flask + SQLite backend. GitHub Actions runs tests, builds Docker images, and pushes to Docker Hub. Deploy locally with Docker or Docker Compose.
 
+## Application Results 
+![CI/CD Workflow](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/GitHub_CICD.png)
+![Contact / Info](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/Cont_Info.png)
+![Main Application UI](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/Main_Application.png)
+![API Health Check](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/App_Health-Check.png)
+
 ## Features
  - Frontend: React + Vite + Tailwind UI (web/)
  - Backend: Flask + SQLite (api/)
  - CI/CD: GitHub Actions tests, builds, and pushes images to Docker Hub
  - Local run: Pull published images or build locally via Compose
 
-images/File-structure.png
+## File Structure
+![File Structure](https://raw.githubusercontent.com/CSD-FX/GitHub_Actions_-_Docker-No_Cloud_Setup-/main/images/File-structure.png)
 
 ## Prerequisites
  - Git
