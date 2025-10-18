@@ -32,8 +32,8 @@
 
 ## > Clone the Repo in your local
 ```bash
-git clone
-cd
+git clone https://github.com/CSD-FX/GitHub-Actions-Docker-No_Cloud_Setup.git
+cd GitHub-Actions-Docker-No_Cloud_Setup
 ```
 
 ## > Docker Hub setup
