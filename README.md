@@ -20,7 +20,7 @@
 ```json
 { "dns": ["1.1.1.1", "8.8.8.8"] }
 ```
- _ Apply & restart.
+ - Apply & restart.
 
 # Step by Step Guild 👇
 
@@ -32,4 +32,4 @@ cd
 ## Docker Hub setup
  - Create two public repos: notes-api and notes-web.
  -  Create a Docker Hub Access Token:
-   - Docker Hub → Account Settings → Security → New Access Token
+     - Docker Hub → Account Settings → Security → New Access Token
