@@ -21,3 +21,15 @@
 { "dns": ["1.1.1.1", "8.8.8.8"] }
 ```
  _ Apply & restart.
+
+# Step by Step Guild 👇
+
+## Clone the Repo in your local
+```bash
+git clone
+cd
+```
+## Docker Hub setup
+ - Create two public repos: notes-api and notes-web.
+ -  Create a Docker Hub Access Token:
+   - Docker Hub → Account Settings → Security → New Access Token
